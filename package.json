@@ -1,0 +1,34 @@
+{
+  "name": "letranchinhnguyen-nextjs",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev --turbopack",
+    "build": "next build --turbopack",
+    "start": "next start",
+    "lint": "eslint"
+  },
+  "dependencies": {
+    "@fortawesome/fontawesome-svg-core": "^7.0.1",
+    "@fortawesome/free-solid-svg-icons": "^7.0.1",
+    "@fortawesome/react-fontawesome": "^3.0.2",
+    "@tinymce/tinymce-react": "^6.3.0",
+    "formidable": "^3.5.4",
+    "lucide-react": "^0.544.0",
+    "next": "15.5.2",
+    "react": "^18.3.1",
+"react-dom": "^18.3.1",
+    "react-slider": "^2.0.6",
+    "swiper": "^11.2.10",
+    "tinymce": "^8.1.2"
+  },
+  "devDependencies": {
+    "@eslint/eslintrc": "^3",
+    "@tailwindcss/postcss": "^4",
+    "@types/node": "24.3.1",
+    "@types/react": "19.1.12",
+    "eslint": "^9",
+    "eslint-config-next": "15.5.2",
+    "tailwindcss": "^4"
+  }
+}
