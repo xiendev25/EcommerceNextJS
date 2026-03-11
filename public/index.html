@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Danh sách sản phẩm theo danh mục</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-gray-100">
+
+    <div class="container mx-auto px-4 py-12">
+        <div class="text-center mb-10">
+            <h2 class="text-3xl font-bold text-gray-800 md:text-4xl">Sản phẩm của chúng tôi</h2>
+            <p class="text-gray-600 mt-2">Khám phá những sản phẩm nổi bật được lựa chọn dành riêng cho bạn.</p>
+        </div>
+
+        <div class="flex justify-center mb-10 space-x-2 md:space-x-4">
+            <button data-category="all"
+                class="category-btn active px-4 py-2 text-sm md:text-base font-semibold text-white bg-blue-600 rounded-full shadow-md hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-opacity-75 transition duration-300">
+                Tất cả
+            </button>
+            <button data-category="thiet-bi-dien-tu"
+                class="category-btn px-4 py-2 text-sm md:text-base font-semibold text-gray-700 bg-white rounded-full shadow-md hover:bg-gray-200 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-opacity-75 transition duration-300">
+                Thiết bị điện tử
+            </button>
+            <button data-category="thoi-trang"
+                class="category-btn px-4 py-2 text-sm md:text-base font-semibold text-gray-700 bg-white rounded-full shadow-md hover:bg-gray-200 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-opacity-75 transition duration-300">
+                Thời trang
+            </button>
+            <button data-category="do-gia-dung"
+                class="category-btn px-4 py-2 text-sm md:text-base font-semibold text-gray-700 bg-white rounded-full shadow-md hover:bg-gray-200 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-opacity-75 transition duration-300">
+                Đồ gia dụng
+            </button>
+        </div>
+
+        <div id="product-list" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+            <div class="product-item" data-category="thiet-bi-dien-tu">
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden group">
+                    <div class="relative">
+                        <img src="https://via.placeholder.com/400x300.png/007bff/ffffff?text=Laptop" alt="Sản phẩm"
+                            class="w-full h-56 object-cover">
+                        <div
+                            class="absolute inset-0 bg-black bg-opacity-40 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                            <button class="text-white bg-blue-600 hover:bg-blue-700 py-2 px-4 rounded-full">Thêm vào
+                                giỏ</button>
+                        </div>
+                    </div>
+                    <div class="p-5">
+                        <h3 class="text-lg font-semibold text-gray-800">Laptop Hiện Đại</h3>
+                        <p class="text-gray-600 mt-2">18.500.000₫</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="product-item" data-category="thoi-trang">
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden group">
+                    <div class="relative">
+                        <img src="https://via.placeholder.com/400x300.png/28a745/ffffff?text=Áo+Sơ+Mi" alt="Sản phẩm"
+                            class="w-full h-56 object-cover">
+                        <div
+                            class="absolute inset-0 bg-black bg-opacity-40 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                            <button class="text-white bg-blue-600 hover:bg-blue-700 py-2 px-4 rounded-full">Thêm vào
+                                giỏ</button>
+                        </div>
+                    </div>
+                    <div class="p-5">
+                        <h3 class="text-lg font-semibold text-gray-800">Áo Sơ Mi Nam</h3>
+                        <p class="text-gray-600 mt-2">450.000₫</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="product-item" data-category="do-gia-dung">
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden group">
+                    <div class="relative">
+                        <img src="https://via.placeholder.com/400x300.png/ffc107/ffffff?text=Máy+Xay" alt="Sản phẩm"
+                            class="w-full h-56 object-cover">
+                        <div
+                            class="absolute inset-0 bg-black bg-opacity-40 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                            <button class="text-white bg-blue-600 hover:bg-blue-700 py-2 px-4 rounded-full">Thêm vào
+                                giỏ</button>
+                        </div>
+                    </div>
+                    <div class="p-5">
+                        <h3 class="text-lg font-semibold text-gray-800">Máy Xay Sinh Tố</h3>
+                        <p class="text-gray-600 mt-2">1.200.000₫</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="product-item" data-category="thiet-bi-dien-tu">
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden group">
+                    <div class="relative">
+                        <img src="https://via.placeholder.com/400x300.png/dc3545/ffffff?text=Tai+Nghe" alt="Sản phẩm"
+                            class="w-full h-56 object-cover">
+                        <div
+                            class="absolute inset-0 bg-black bg-opacity-40 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                            <button class="text-white bg-blue-600 hover:bg-blue-700 py-2 px-4 rounded-full">Thêm vào
+                                giỏ</button>
+                        </div>
+                    </div>
+                    <div class="p-5">
+                        <h3 class="text-lg font-semibold text-gray-800">Tai Nghe Không Dây</h3>
+                        <p class="text-gray-600 mt-2">990.000₫</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const categoryButtons = document.querySelectorAll('.category-btn');
+            const productItems = document.querySelectorAll('.product-item');
+
+            categoryButtons.forEach(button => {
+                button.addEventListener('click', () => {
+                    // Lấy giá trị category từ thuộc tính data-category
+                    const category = button.dataset.category;
+
+                    // Cập nhật trạng thái "active" cho button được click
+                    categoryButtons.forEach(btn => {
+                        btn.classList.remove('active', 'bg-blue-600', 'text-white');
+                        btn.classList.add('bg-white', 'text-gray-700');
+                    });
+                    button.classList.add('active', 'bg-blue-600', 'text-white');
+                    button.classList.remove('bg-white', 'text-gray-700');
+
+
+                    // Lọc và hiển thị sản phẩm
+                    productItems.forEach(item => {
+                        const itemCategory = item.dataset.category;
+
+                        // Nếu category là "all" hoặc category của item trùng với category đã chọn
+                        if (category === 'all' || itemCategory === category) {
+                            item.style.display = 'block'; // Hiện sản phẩm
+                        } else {
+                            item.style.display = 'none'; // Ẩn sản phẩm
+                        }
+                    });
+                });
+            });
+        });
+    </script>
+
+</body>
+
+</html>
